@@ -23,7 +23,7 @@ export function attributesTransformer(root: any): void {
     root,
     (node, index, parent) =>
       node.type === 'paragraph' && parent?.type === 'listItem',
-    (node: Parent<Node | AttrsNode>, index, parent) => {
+    (node: Parent, index, parent) => {
       const children = node.children
 
       const ids = Object.entries(children)
