@@ -16,7 +16,6 @@ interface AttributesData {
  * [text](https://test.com){target=_blank}
  */
 export default function remarkAttributes(
-  this: Processor<Root, Root, Root>,
   options = {mdx: false}
 ): Transformer<Root> {
   const data = this.data() as AttributesData
